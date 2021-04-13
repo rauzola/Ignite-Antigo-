@@ -4,7 +4,7 @@ import styles from '../styles/global.module.scss';
 export default function Home() {
   return (
     <h1 className={styles.title}>
-      Hello World
+      Hello <span>World</span>
     </h1>
   )
 }
