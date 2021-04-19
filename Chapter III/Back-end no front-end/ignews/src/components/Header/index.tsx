@@ -1,5 +1,5 @@
 import React from 'react';
-import { SingnInButton } from '../SingInButton';
+import { SignInButton } from '../SignInButton';
 import  styles from './styles.module.scss';
 
 export function Header() {
@@ -13,7 +13,7 @@ export function Header() {
                     <a>Posts</a>
                 </nav>
 
-                <SingnInButton />
+                <SignInButton />
             </div>
         </header>
     );
