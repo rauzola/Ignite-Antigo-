@@ -2,7 +2,6 @@ import { GetServerSideProps } from "next"
 import { getSession, useSession } from "next-auth/client"
 import Head from "next/head"
 import { RichText } from "prismic-dom"
-import posts from "."
 
 import { getPrismicClient } from "../../services/prismic"
 
