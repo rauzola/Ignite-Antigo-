@@ -1,7 +1,7 @@
 import { FormControl,
     FormLabel,
     Input as ChakaraInput,
-    InputProps as ChakaraInputProps
+    InputProps as ChakaraInputProps,
 } from "@chakra-ui/react";
 
 interface InputProps extends ChakaraInputProps {
@@ -11,7 +11,7 @@ interface InputProps extends ChakaraInputProps {
 
 export function Input({ name, label, ...rest }: InputProps) {
     return (
-        <FormControl>
+        <FormControl >
         { !!label && <FormLabel htmlFor={name} >{label}</FormLabel> }
 
         <ChakaraInput

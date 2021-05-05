@@ -26,24 +26,6 @@ export default function SignIn() {
           <Input name="email" type="email" label="E-mail"/>
           <Input name="password" type="password" label="Senha"/>
 
-         
-
-          {/* <FormControl>
-            <FormLabel htmlFor="password" >Senha</FormLabel>
-
-            <Input
-              name="password"
-              id="password"
-              type="password"
-              focusBorderColor="pink.500"
-              bgColor="gray.900"
-              variant="filled"
-              _hover={{
-                bgColor: 'gray.900'
-              }}
-              size="lg"
-            />
-          </FormControl> */}
           </Stack>
 
           <Button
@@ -55,10 +37,15 @@ export default function SignIn() {
             Entrar
         </Button>
 
+        
+
        
 
 
       </Flex>
+      {/* comenta essa linha depois */}
+      <Flex p="5">/dashboard</Flex>
     </Flex>
+    
   )
 }
