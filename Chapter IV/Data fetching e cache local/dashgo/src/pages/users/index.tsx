@@ -1,7 +1,7 @@
 import {Box, Button, Checkbox, Flex, Heading, Icon, Table, Tbody, Td, Th, Thead, Tr, Text, useBreakpointValue} from '@chakra-ui/react'
 import {Header} from '../../components/Header/index';
 import {RiAddLine, RiPencilLine} from 'react-icons/ri';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Pagination } from '../../components/Pagination';
 import { Sidebar } from '../../components/Sidebar';
 import Link from 'next/link';
@@ -10,6 +10,12 @@ export default function UserList() {
     const isWideVersion = useBreakpointValue({
         base: false,
         lg: true,
+    })
+
+    useEffect(() => {
+        fetch('http://localhost:3000/api/users')
+            .then(response => response.json())
+            .then(data => console.log(data))
     })
 
     return (
