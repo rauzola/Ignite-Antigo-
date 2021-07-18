@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { validateUserPermissions } from "../../utils/validateUserPermissions";
+import { validateUserPermissions } from "../utils/validateUserPermissions";
 import { AuthContext } from "../contexts/AuthContext";
 
 
